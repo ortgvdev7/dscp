@@ -1,0 +1,7 @@
+{
+  "name": "dscp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
