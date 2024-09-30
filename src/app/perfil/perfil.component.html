@@ -1,0 +1,35 @@
+<ion-content>
+  <app-header></app-header>
+  <div class="card" style="background-color: black; border: 1px solid grey; border-radius: 10px; margin: 30px;">
+    <div class="c-header" style="border-bottom: 1px solid white;">
+      <h2 style="color: rgb(162, 160, 160); text-align: center;">Perfil</h2>
+      <div class="h-item" style="display: flex;">
+        <h3 style="color:  rgb(162, 160, 160); font-size: 15px;margin: 10px;">Seguidores</h3>
+        <h3 style="color: yellow; font-size: 15px; margin: 10px;">24</h3>
+      </div>
+    </div>
+    <div class="c-body">
+      <h3 style="text-align: center; color: white;">{{usuario}}</h3>
+      <div class="b-item" style="text-align: center;">
+        <h3 style="text-align: center; font-size: 15px; color: white;">Tiempo en la aplicación: </h3>
+        <h3 style="color: yellow; text-align: center; font-size: 15px;">6 meses</h3>
+      </div>
+      <div class="b-item">
+        <h3 style="text-align: center; font-size: 15px; color: white;">Metas cumplidas: </h3>
+        <h3 style="color: yellow; text-align: center; font-size: 15px;">22 metas</h3>
+      </div>
+    </div>
+    <div class="c-footer" style="border-bottom: 1px solid white;">
+      <div class="f-item" style="display: flex;">
+        <button style="background-color: green; color: white; border-radius: 5px; padding: 10px; margin: auto; margin-bottom: 20px;">Escanear QR</button>
+      </div>
+      <div class="f-item" style="display: flex;">
+        <button style="background-color: white; color: black; border-radius: 5px; padding: 10px; margin: auto; margin-bottom: 20px;">Generar QR</button>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: black;">
+    <a [routerLink]="['/home']" style="text-align: center; color: white; text-decoration: none;">Home</a>
+  </div>
+</ion-content>

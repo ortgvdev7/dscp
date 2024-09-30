@@ -1,0 +1,50 @@
+<ion-content>
+    <app-header></app-header>
+
+    <div id="objetivos" class="card" style="background-color: black; border: 1px solid grey; border-radius: 10px; margin: 20px;">
+      <div class="card-h">
+        <h2 style="size: 10px; color: white; padding-left: 10px; padding-top: 10px;">Objetivos diarios 🎯</h2>
+      </div>
+      <div class="card-b" style="border-radius: 10px; margin: 20px;">
+        <div class="body-item" style="display: flex;">
+          <p style="color: white;">1. Levantarme a las 6am</p>
+          <button style="margin: 10px; background-color: green; color: white; border-radius: 10px; padding: 10px;">Logrado</button>
+        </div>
+        <div class="body-item" style="display: flex;">
+          <p style="color: white;">2. Hacer la cama</p>
+          <button style="margin: 10px; background-color: green; color: white; border-radius: 10px; padding: 10px;">Logrado</button>
+        </div>
+        <div class="body-item" style="display: flex;">
+          <p style="color: white;">3. Ir al gimnasio a las 8am</p>
+          <button style="margin: 10px; background-color: red; color: white; border-radius: 10px; padding: 10px;">No logrado</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="metas" class="card" style="background-color: black; border: 1px solid grey; border-radius: 10px; margin: 20px;">
+      <div class="card-h">
+        <h2 style="size: 10px; color: white; padding-left: 10px; padding-top: 10px;">Metas a largo plazo 🎯</h2>
+      </div>
+      <div class="card-b" style="border-radius: 10px; margin: 20px;">
+        <div class="body-item" style="display: flex;">
+          <p style="color: white;">1.  Aumentar la cantidad de ejercicio que hago en un 50%</p>
+          <button style="margin: 10px; background-color: yellow; color: black; border-radius: 10px; padding: 10px;">Pendiente</button>
+        </div>
+        <div class="body-item" style="display: flex;">
+          <p style="color: white;">1.  Ahorrar $500.000 pesos en 5 meses</p>
+          <button style="margin: 10px; background-color: orange ; color: black; border-radius: 10px; padding: 10px;">50% Completado</button>
+        </div>
+      </div>
+    </div>
+
+    <div style="background-color: black;">
+      <a [routerLink]="['/login']" style="color: white; text-decoration: none;">Login</a>
+      <a [routerLink]="['/perfil']" style="color: white; text-decoration: none;">Perfil</a>
+    </div>
+    <!-- <ion-item>
+      <ion-label position="floating">Nombre de usuario</ion-label>
+      <ion-input [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+    <ion-button (click)="guardarNombre()">Guardar</ion-button> -->
+</ion-content>
+
